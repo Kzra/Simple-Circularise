@@ -1,4 +1,4 @@
-
+#!usr/bin/env python3
 import argparse
 parser = argparse.ArgumentParser()
 parser.add_argument("fasta_file", help="[Input]: list of  sequences to be circularised")
