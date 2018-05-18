@@ -30,3 +30,8 @@ Circularise a genome with a repeat size determined by a probability of co-occura
 ```
 
 Circularise a genome using largest possible repeat size. Start searching at repeat size 10 and increase until largest is found. Ensure output sequence is >1kb.
+
+```shell
+!python simple_circularise.py linear.fasta circular.fasta 
+```
+Circularise a genome based on a repeat size determined by p < 0.005. Output the largest sequence that can be circularised (default behaviour). 
