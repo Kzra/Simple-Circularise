@@ -5,7 +5,7 @@ _Includes python script and geneious plugin extension._
 
 **Usage**: 
 ```shell 
-!python simple_circularise.py [input.fasta] [output.fasta] [-p] [-min] [-max] [-r]
+python simple_circularise.py [input.fasta] [output.fasta] [-p] [-min] [-max] [-r]
 ```
 ```[-min]```: set a minimum size for the output sequence. 
 
@@ -19,18 +19,18 @@ _Includes python script and geneious plugin extension._
 **Examples**:
 
 ```shell
-!python simple_circularise.py linear.fasta circular.fasta -p 0.0001 -min 1000 -max 2000
+python simple_circularise.py linear.fasta circular.fasta -p 0.0001 -min 1000 -max 2000
 ``` 
 Circularise a genome with a repeat size determined by a probability of co-occurance < 0.0001. Output the largest sequence between 1 - 2kb  that can be circularised.
 
 ```shell
-!python simple_circularise.py linear.fasta circular.fasta -r 10 min 1000
+python simple_circularise.py linear.fasta circular.fasta -r 10 min 1000
 ```
 
 Circularise a genome using largest possible repeat size. Start searching at repeat size 10 and increase until largest is found. Ensure output sequence is >1kb.
 
 ```shell
-!python simple_circularise.py linear.fasta circular.fasta 
+python simple_circularise.py linear.fasta circular.fasta 
 ```
 Circularise a genome based on a repeat size determined by p < 0.005. Output the largest sequence that can be circularised (default behaviour). 
 
